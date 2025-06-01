@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyBlog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Blog</h1>
+  </header>
+
+  <section class="form-section">
+    <h2>Subscribe to our Newsletter</h2>
+    <form id="subscribeForm">
+      <input type="text" placeholder="Your Name" name="name" required>
+      <input type="email" placeholder="Your Email" name="email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <section class="video-section">
+    <h2>Featured Video</h2>
+    <video controls width="400">
+      <source src="./videos/mountain.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section class="upload-section">
+    <h2>Upload Your Article</h2>
+    <input type="file" id="fileInput">
+    <button onclick="uploadFile()">Upload</button>
+    <p id="fileMessage"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
